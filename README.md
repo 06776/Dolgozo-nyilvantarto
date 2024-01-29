@@ -17,7 +17,7 @@ A JSON Server beépítésre került ennél a projektnél.
 
 ## Projekt indítása
 
-- A sikeres klónozás után használd a projekt gyökérkönyvtárában (angular-crud-app) az 'npm install' parancsot. <br>
+- A sikeres klónozás után használd a projekt gyökérkönyvtárában (Dolgozo-nyilvantarto) az 'npm install' parancsot. <br>
 - A node_modules-ok telepítését követően használd a következő parancsot: 'npm install -g json-server'. <br>
 - A JSON Server telepítése után indítsd el az API-t ezzel a paranccsal: 'json-server --watch db.json'. <br>
 - Végül indítsd el az Angular-t is: 'ng serve -o'.

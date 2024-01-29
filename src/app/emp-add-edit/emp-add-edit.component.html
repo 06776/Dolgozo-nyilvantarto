@@ -1,0 +1,70 @@
+<div mat-dialog-title>
+    <h1>Dolgozó adatai</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Vezetéknév</mat-label>
+                <input matInput type="text" placeholder="Minta" formControlName="firstName">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Keresztnév</mat-label>
+                <input matInput placeholder="Péter" formControlName="lastName">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>E-mail</mat-label>
+                <input matInput type="email" placeholder="mintapeter@gmail.com" formControlName="email">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Születési dátum</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="dob">
+                <mat-hint>HÓ/NAP/ÉV</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-radio-group aria-label="Select an option" formControlName="gender">
+                <mat-label><b>Nem</b></mat-label>
+                <mat-radio-button value="Férfi">Férfi</mat-radio-button>
+                <mat-radio-button value="Nő">Nő</mat-radio-button>
+                <mat-radio-button value="Egyéb">Egyéb</mat-radio-button>
+            </mat-radio-group>
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Végzettség</mat-label>
+                <mat-select formControlName="education">
+                    <mat-option *ngFor="let val of education" [value]="val">{{val}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Munkahely</mat-label>
+                <input matInput formControlName="company">
+            </mat-form-field>
+        </div>
+        
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Tapasztalat</mat-label>
+                <input matInput placeholder="Évszám" type="number" formControlName="experience">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Fizetés összege</mat-label>
+                <input matInput type="number" formControlName="package">
+                <mat-hint>HUF</mat-hint>
+            </mat-form-field>
+        </div>
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Mégse</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Frissítés': 'Mentés'}}</button>
+    </div>
+</form>

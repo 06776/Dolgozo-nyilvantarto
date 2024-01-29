@@ -1,0 +1,141 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "Patrik Hajdara"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "Patrik Hajdara"
+  },
+  "employees": [
+    {
+      "firstName": "Nagy",
+      "lastName": "János",
+      "email": "nagyjanos@gmail.com",
+      "dob": "1981-10-05T12:09:39Z",
+      "gender": "Férfi",
+      "education": "Diploma",
+      "company": "Budapest",
+      "experience": 20,
+      "package": 600000,
+      "id": "1"
+    },
+    {
+      "firstName": "Molnár",
+      "lastName": "Evelin",
+      "email": "molnarevelin@gmail.com",
+      "dob": "1991-09-12T22:14:02Z",
+      "gender": "Nő",
+      "education": "Diploma",
+      "company": "Miskolc",
+      "experience": 10,
+      "package": 500000,
+      "id": "2"
+    },
+    {
+      "firstName": "Kiss",
+      "lastName": "Zoltán",
+      "email": "kisszoltan@gmail.com",
+      "dob": "1980-05-19T08:23:30Z",
+      "gender": "Férfi",
+      "education": "Mester diploma",
+      "company": "Budapest",
+      "experience": 22,
+      "package": 800000,
+      "id": "3"
+    },
+    {
+      "firstName": "Varga",
+      "lastName": "Eszter",
+      "email": "vargaeszter@gmail.com",
+      "dob": "1992-04-28T23:34:29Z",
+      "gender": "Nő",
+      "education": "Érettségi",
+      "company": "Eger",
+      "experience": 15,
+      "package": 400000,
+      "id": "4"
+    },
+    {
+      "firstName": "Pádár",
+      "lastName": "András",
+      "email": "padarandras@gmail.com",
+      "dob": "2002-06-04T05:11:37Z",
+      "gender": "Férfi",
+      "education": "Diploma",
+      "company": "Budapest",
+      "experience": 12,
+      "package": 600000,
+      "id": "5"
+    },
+    {
+      "firstName": "Szép",
+      "lastName": "Heléna",
+      "email": "szephelena@gmail.com",
+      "dob": "1990-01-18T09:36:59Z",
+      "gender": "Nő",
+      "education": "Mester diploma",
+      "company": "Szeged",
+      "experience": 20,
+      "package": 750000,
+      "id": "6"
+    },
+    {
+      "firstName": "Farkas",
+      "lastName": "Máté",
+      "email": "farkasmate@gmail.com",
+      "dob": "1980-12-23T23:00:00.000Z",
+      "gender": "Férfi",
+      "education": "Mester diploma",
+      "company": "Budapest",
+      "experience": 30,
+      "package": 1100000,
+      "id": "7"
+    },
+    {
+      "firstName": "Lénárt",
+      "lastName": "Sarolta",
+      "email": "lenartsarolta@gmail.com",
+      "dob": "1985-06-11T00:30:28Z",
+      "gender": "Nő",
+      "education": "Diploma",
+      "company": "Gödöllő",
+      "experience": 18,
+      "package": 650000,
+      "id": "8"
+    },
+    {
+      "firstName": "Barna",
+      "lastName": "Miklós",
+      "email": "barnamiklos@gmail.com",
+      "dob": "2001-06-13T22:00:00.000Z",
+      "gender": "Férfi",
+      "education": "Diploma",
+      "company": "Esztergom",
+      "experience": 15,
+      "package": 580000,
+      "id": "9"
+    },
+    {
+      "id": "10",
+      "firstName": "Horváth",
+      "lastName": "Anett",
+      "email": "horvathanett@gmail.com",
+      "dob": "1982-08-11T22:00:00.000Z",
+      "gender": "Nő",
+      "education": "Mester diploma",
+      "company": "Pécs",
+      "experience": 28,
+      "package": 900000
+    }
+  ]
+}
